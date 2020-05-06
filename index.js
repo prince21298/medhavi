@@ -116,9 +116,12 @@ const feedbackableStages = Object.keys(feedbackableStagesData);
 const permissions = {
   updateStage: ['r', 's', 'saakshi19', 'gnaneshwari19', 'alisha', 'nilam18', 'pralhad18', 'a', 'nitesh', 'aman19', 'rahit19', 'pralhad'],
 };
-const superAdmin=['a@navgurukul.org','r@navgurukul.org','s@navgurukul.org']
+const role = { 
+  superAdmin: ['a@navgurukul.org','r@navgurukul.org','s@navgurukul.org'],
+  admin: ['prince18@navgurukul.org','rohit18@navgurukul.org','sanjay18@navgurukul.org']
+}
 
-module.exports = {
+module.exports = {   
   allStages: allStages,
   studentStages: Object.keys(allStages),
   feedbackableStages: feedbackableStages,
@@ -141,5 +144,5 @@ module.exports = {
     nothing: 1, job: 2, study: 3, other: 4,
   },
   endStages: endStages,
-  superAdmin,
+  role,
 };
